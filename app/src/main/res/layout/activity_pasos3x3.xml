@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtNotaR"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_pasos_3x3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibtnHomep3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/ibtnInfop3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_info_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtTituloPasos3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="82dp"
+        android:fontFamily="@font/vt323"
+        android:text="Selecciona un paso"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloPasos3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="412dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnPC3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="PRIMERA CRUZ"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnPC3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/ibtnPC3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pc3" />
+
+            <Button
+                android:id="@+id/btnE3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="ESQUINAS"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnE3"
+                app:layout_constraintTop_toBottomOf="@+id/btnPC3" />
+
+            <ImageButton
+                android:id="@+id/ibtnE3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnPC3"
+                app:srcCompat="@drawable/e3" />
+
+            <Button
+                android:id="@+id/btnCM3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="CAPA MEDIA"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnCM3"
+                app:layout_constraintTop_toBottomOf="@+id/btnE3" />
+
+            <ImageButton
+                android:id="@+id/ibtnCM3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnE3"
+                app:srcCompat="@drawable/cm3" />
+
+            <Button
+                android:id="@+id/btnCC3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="CRUZ CONTRARIA"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnCC3"
+                app:layout_constraintTop_toBottomOf="@+id/btnCM3" />
+
+            <ImageButton
+                android:id="@+id/ibtnCC3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnCM3"
+                app:srcCompat="@drawable/cc3" />
+
+            <Button
+                android:id="@+id/btnAC3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="ACOMODAR CRUZ"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnAC3"
+                app:layout_constraintTop_toBottomOf="@+id/btnCC3" />
+
+            <ImageButton
+                android:id="@+id/ibtnAC3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnCC3"
+                app:srcCompat="@drawable/ac3" />
+
+            <Button
+                android:id="@+id/btnAE3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="ACOMODAR ESQUINAS"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnAE3"
+                app:layout_constraintTop_toBottomOf="@+id/btnAC3" />
+
+            <ImageButton
+                android:id="@+id/ibtnAE3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnAC3"
+                app:srcCompat="@drawable/ae3" />
+
+            <Button
+                android:id="@+id/btnOE3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="28dp"
+                android:backgroundTint="#FFDA6A"
+                android:fontFamily="@font/inknut_antiqua"
+                android:text="ORIENTAR ESQUINAS"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/ibtnOE3"
+                app:layout_constraintTop_toBottomOf="@+id/btnAE3" />
+
+            <ImageButton
+                android:id="@+id/ibtnOE3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="25dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnAE3"
+                app:srcCompat="@drawable/oe3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

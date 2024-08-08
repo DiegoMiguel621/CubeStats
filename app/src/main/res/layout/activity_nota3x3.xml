@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_nota3x3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout102"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibtnHomen3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/ibtnInfon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_info_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="77dp"
+        android:fontFamily="@font/vt323"
+        android:text="NOTACIÓN EN LOS CUBOS RUBIK"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout102" />
+
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:fontFamily="@font/comic_neue"
+                android:text="En un cubo de rubik la notación es el nombre que le designamos a una determinada cara del cubo, en lugar de ponerle el nombre de cada color, la notación estará determinada por la posición en la que sujetemos el cubo, para de este modo poder entender mejor los populares &quot;Algoritmos&quot; como instrucciones de movimientos para resolver el cubo."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara derecha le llamaremos &quot;R&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaR3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:srcCompat="@drawable/notair" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara izquierda le llamaremos &quot;L&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaR3" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaL3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:srcCompat="@drawable/notail" />
+
+            <VideoView
+                android:id="@+id/videoNotaLR"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="81dp"
+                android:background="@drawable/phnota"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaL3" />
+
+            <TextView
+                android:id="@+id/textViewF"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara derecha le llamaremos &quot;F&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/videoNotaLR" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaF3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewF"
+                app:srcCompat="@drawable/notaif" />
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara izquierda le llamaremos &quot;B&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaF3" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaB3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewB"
+                app:srcCompat="@drawable/notail" />
+
+            <VideoView
+                android:id="@+id/videoNotaFB"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="81dp"
+                android:background="@drawable/phnota"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaB3" />
+
+            <TextView
+                android:id="@+id/textViewU"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara derecha le llamaremos &quot;U&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/videoNotaFB" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaU3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewU"
+                app:srcCompat="@drawable/notaiu" />
+
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="46dp"
+                android:background="#F1C691"
+                android:fontFamily="@font/comic_neue"
+                android:gravity="center"
+                android:text="A nuestra cara izquierda le llamaremos &quot;D&quot;"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaU3" />
+
+            <ImageButton
+                android:id="@+id/ibtnNotaD3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginEnd="136dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewD"
+                app:srcCompat="@drawable/notaid" />
+
+            <VideoView
+                android:id="@+id/videoNotaUD"
+                android:layout_width="250dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="81dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/phnota"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ibtnNotaD3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
