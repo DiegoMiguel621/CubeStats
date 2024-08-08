@@ -127,7 +127,7 @@ class record2x2 : AppCompatActivity() {
             Toast.makeText(this, "No hay registro para eliminar", Toast.LENGTH_SHORT).show()
             return
         }
-//intento3
+//intento5
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Eliminar Registro")
         builder.setMessage("¿Estás seguro de que deseas eliminar el registro?")
