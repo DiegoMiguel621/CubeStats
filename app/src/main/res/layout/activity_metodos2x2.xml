@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/ibtnHome3alg"
+            android:id="@+id/ibtnHome2alg"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
@@ -29,7 +29,7 @@
             app:srcCompat="@drawable/baseline_home_24" />
 
         <ImageButton
-            android:id="@+id/ibtnInfo3alg"
+            android:id="@+id/ibtnInfo2alg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutaelA" />
 
     <ImageButton
-        android:id="@+id/ibtnOll3"
+        android:id="@+id/ibtnOll2"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginStart="40dp"
@@ -68,29 +68,29 @@
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewalg"
-        app:srcCompat="@drawable/oll_3x3" />
+        app:srcCompat="@drawable/ortega_oll" />
 
     <Button
-        android:id="@+id/btnOll3"
-        android:layout_width="100dp"
+        android:id="@+id/btnOll2"
+        android:layout_width="130dp"
         android:layout_height="45dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/boton_transparente"
         android:fontFamily="@font/inknut_antiqua"
-        android:text="OLL"
+        android:text="Ortega OLL"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibtnOll3"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnOll2"
         app:strokeColor="#000000"
         app:strokeWidth="10dp" />
 
     <ImageButton
-        android:id="@+id/ibtnPll3"
+        android:id="@+id/ibtnPbl2"
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_marginTop="60dp"
@@ -99,24 +99,24 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewalg"
-        app:srcCompat="@drawable/pll_3x3" />
+        app:srcCompat="@drawable/ortega_pbl" />
 
     <Button
         android:id="@+id/btnPbl2"
-        android:layout_width="100dp"
+        android:layout_width="130dp"
         android:layout_height="45dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/boton_transparente"
         android:fontFamily="@font/inknut_antiqua"
-        android:text="PLL"
+        android:text="Ortega PBL"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibtnOll3"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnPbl2"
         app:strokeColor="#000000"
         app:strokeWidth="10dp" />
 

@@ -9,41 +9,41 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class metodos3x3 : AppCompatActivity() {
+class activity_metodos2x2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_metodos3x3)
+        setContentView(R.layout.activity_metodos2x2)
 
-        val BotonHome3alg=findViewById<ImageButton>(R.id.ibtnHome3alg)
-        val BotonInfo3alg=findViewById<ImageButton>(R.id.ibtnInfo3alg)
-        val ibtnOll3=findViewById<ImageButton>(R.id.ibtnOll3)
-        val btnOll3=findViewById<Button>(R.id.btnOll3)
-        val ibtnPll3=findViewById<ImageButton>(R.id.ibtnPll3)
-        val btnPll3=findViewById<Button>(R.id.btnPbl2)
+        val BotonHome=findViewById<ImageButton>(R.id.ibtnHome2alg)
+        val BotonInfo=findViewById<ImageButton>(R.id.ibtnInfo2alg)
+        val ibtnOll2=findViewById<ImageButton>(R.id.ibtnOll2)
+        val btnOll2=findViewById<Button>(R.id.btnOll2)
+        val ibtnPbl2=findViewById<ImageButton>(R.id.ibtnPbl2)
+        val btnPbl2=findViewById<Button>(R.id.btnPbl2)
 
-        BotonHome3alg.setOnClickListener {
+        BotonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-        BotonInfo3alg.setOnClickListener {
+        BotonInfo.setOnClickListener {
             val intent = Intent(this, activity_acerca_de::class.java)
             startActivity(intent)
         }
-        ibtnOll3.setOnClickListener {
-            val intent = Intent(this, Oll3x3::class.java)
+        ibtnOll2.setOnClickListener {
+            val intent = Intent(this, activity_oll2x2::class.java)
             startActivity(intent)
         }
-        btnOll3.setOnClickListener {
-            val intent = Intent(this, Oll3x3::class.java)
+        btnOll2.setOnClickListener {
+            val intent = Intent(this, activity_oll2x2::class.java)
             startActivity(intent)
         }
-        ibtnPll3.setOnClickListener {
-            val intent = Intent(this, activity_pll3x3::class.java)
+        ibtnPbl2.setOnClickListener {
+            val intent = Intent(this, activity_pbl2x2::class.java)
             startActivity(intent)
         }
-        btnPll3.setOnClickListener {
-            val intent = Intent(this, activity_pll3x3::class.java)
+        btnPbl2.setOnClickListener {
+            val intent = Intent(this, activity_pbl2x2::class.java)
             startActivity(intent)
         }
 
