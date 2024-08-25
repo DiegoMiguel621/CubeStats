@@ -7,30 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".record2x2">
 
-    <TextView
-        android:id="@+id/txtRecord2x2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="55dp"
-        android:fontFamily="@font/vt323"
-        android:text="Cubo 2x2"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img2x2"
         android:layout_width="254dp"
         android:layout_height="140dp"
         android:layout_marginStart="78dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="79dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRecord2x2"
+        app:layout_constraintTop_toBottomOf="@+id/btnFImg2"
         app:srcCompat="@drawable/main2x2" />
 
     <TextView
@@ -45,7 +31,7 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/img2x2" />
 
     <TextView
         android:id="@+id/txt2x2PB"
@@ -110,6 +96,40 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/baseline_home_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFImg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:contentDescription="Floating Action Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/camara" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-50dp"
+        android:clickable="true"
+        android:contentDescription="Floating Action Button"
+        android:scaleType="centerInside"
+        app:backgroundTint="@android:color/transparent"
+        app:fabSize="mini"
+        app:layout_constraintStart_toEndOf="@+id/img2x2"
+        app:layout_constraintTop_toBottomOf="@+id/img2x2"
+        app:maxImageSize="24dp"
+        app:srcCompat="@drawable/act" />
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnFAddRe2"

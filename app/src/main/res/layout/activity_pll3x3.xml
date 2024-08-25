@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Oll3x3">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibtnHomePll3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/ibtnInfoPll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_info_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txtTituloPll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="123dp"
+        android:fontFamily="@font/vt323"
+        android:text="Casos de PLL"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="412dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloPll">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="412dp"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/pllh"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/pllh" />
+
+            <ImageButton
+                android:id="@+id/pllna"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pllh"
+                app:srcCompat="@drawable/pllna2" />
+
+            <ImageButton
+                android:id="@+id/pllt"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pllna"
+                app:srcCompat="@drawable/pllt" />
+
+            <ImageButton
+                android:id="@+id/pllua"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pllt"
+                app:srcCompat="@drawable/pllua" />
+
+            <ImageButton
+                android:id="@+id/pllub"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pllua"
+                app:srcCompat="@drawable/pllub" />
+
+            <ImageButton
+                android:id="@+id/pllz"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pllub"
+                app:srcCompat="@drawable/pllz" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

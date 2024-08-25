@@ -115,15 +115,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnres3" />
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="50dp"
-        android:background="#512DA8"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
-
     <ImageButton
         android:id="@+id/ibtnnota3"
         android:layout_width="140dp"
@@ -136,6 +127,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnnota3"
         app:srcCompat="@drawable/notacion3" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

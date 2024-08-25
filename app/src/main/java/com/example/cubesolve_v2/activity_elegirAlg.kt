@@ -2,6 +2,7 @@ package com.example.cubesolve_v2
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,8 @@ class activity_elegirAlg : AppCompatActivity() {
 
         val BotonHome=findViewById<ImageButton>(R.id.ibtnHomeelA)
         val BotonInfo=findViewById<ImageButton>(R.id.ibtnInfoelA)
+        val Botonimg3x3=findViewById<ImageButton>(R.id.ibtn3X3Alg)
+        val Boton3x3=findViewById<Button>(R.id.btn3x3Alg)
 
         BotonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -23,6 +26,14 @@ class activity_elegirAlg : AppCompatActivity() {
         }
         BotonInfo.setOnClickListener {
             val intent = Intent(this, activity_acerca_de::class.java)
+            startActivity(intent)
+        }
+        Botonimg3x3.setOnClickListener {
+            val intent = Intent(this, metodos3x3::class.java)
+            startActivity(intent)
+        }
+        Boton3x3.setOnClickListener {
+            val intent = Intent(this, metodos3x3::class.java)
             startActivity(intent)
         }
 

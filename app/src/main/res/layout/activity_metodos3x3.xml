@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".metodos3x3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutaelA"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/ibtnHome3alg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/ibtnInfo3alg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_info_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewalg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="63dp"
+        android:fontFamily="@font/vt323"
+        android:text="Selecciona un método/paso"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutaelA" />
+
+    <ImageButton
+        android:id="@+id/ibtnOll3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewalg"
+        app:srcCompat="@drawable/oll_3x3" />
+
+    <Button
+        android:id="@+id/btnOll3"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boton_transparente"
+        android:fontFamily="@font/inknut_antiqua"
+        android:text="OLL"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnOll3"
+        app:strokeColor="#000000"
+        app:strokeWidth="10dp" />
+
+    <ImageButton
+        android:id="@+id/ibtnPll3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewalg"
+        app:srcCompat="@drawable/pll_3x3" />
+
+    <Button
+        android:id="@+id/btnPll3"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/boton_transparente"
+        android:fontFamily="@font/inknut_antiqua"
+        android:text="PLL"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibtnOll3"
+        app:strokeColor="#000000"
+        app:strokeWidth="10dp" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:background="#512DA8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

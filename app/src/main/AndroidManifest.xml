@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permisos para usar la cámara y el almacenamiento -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Declara que se utiliza la camara -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +18,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CubeSolve_V2"
         tools:targetApi="31">
+        <activity
+            android:name=".activity_pll3x3"
+            android:exported="false" />
+        <activity
+            android:name=".Oll3x3"
+            android:exported="false" />
+        <activity
+            android:name=".metodos3x3"
+            android:exported="false" />
         <activity
             android:name=".record2x2"
             android:exported="false" />
